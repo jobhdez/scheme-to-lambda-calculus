@@ -1,30 +1,5 @@
 # Compiler web service
-Consists of two compilers: a Scheme to lambda calculus compiler and a Scheme to continuation passing style intermediate language. 
-
-# Installation and Loading
-This project depends on[JZON](https://github.com/Zulu-Inuoe/jzon), which is not on quicklisp, so:
-
-1. Clone JZON to your ASDF/quicklisp directory (wherever SBCL knows to look -- i.e., `~/quicklisp/local-projects/`). 
-
-2. Clone this repo (compiler-web-service) to your ASDF/quicklisp directory. 
-
-3. Load the lambda-web system: `(ql:quickload :lambda-web)`. 
-
-## Using the compiler
-1. Move to this package: `(in-package #:scheme-to-lambda-calculus)`.
-2. Start the REPL: `(repl)`.
-
-       λ> (if ltrue 1 1)
-       
-       
-       λ>
-         (((LAMBDA (T) (LAMBDA (F) (T (LAMBDA (VOID) VOID))))
-           (LAMBDA NIL (LAMBDA (F) (LAMBDA (Z) (F Z)))))
-          (LAMBDA NIL (LAMBDA (F) (LAMBDA (Z) (F Z)))))
-          
-## Using the web service
-1. Move to this package: `(in-package :lambda-server)`.
-2. `(launch)` will start the server and open the app in your browser.
+My first compiler!
 
 # Some Examples
 ```
