@@ -1,6 +1,8 @@
 # Compiler web service
 My first compiler!
 
+Todo:
+- add a closure conversion pass and generate some assembly!
 # Some Examples
 ```
 (compile-scheme '(if ltrue 1 1))
